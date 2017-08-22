@@ -1,0 +1,72 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!-- lOGO -->
+    <div class="navbar-header">
+      <span class="navbar-brand">
+        <a href="#">Logo</a>
+        </span>
+    </div>
+
+    <ul class="nav navbar-nav">
+
+      <!-- simple -->
+      <li class="dropdown navItem" dropdown dropdown container="body" [autoClose]="true">
+        <a dropdownToggle type="button" class="dropdown-toggle">
+          SIMPLE<span class="caret"></span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
+            <a dropdownToggle class="dropdown-item dropdown-toggle nestDropdown" (click)="false">Group 1 <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li role="menuitem"><a class="dropdown-item" routerLink="/simple/demo1">demo1</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+            </ul>
+          </li>
+
+          <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
+            <a dropdownToggle class="dropdown-item dropdown-toggle nestDropdown" (click)="false">Group 2 <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Complex -->
+      <li class="dropdown navItem" dropdown dropdown container="body" [autoClose]="true">
+        <a dropdownToggle type="button" class="dropdown-toggle">
+            COMPLEX<span class="caret"></span>
+          </a>
+        <ul *dropdownMenu class="dropdown-menu" role="menu">
+          <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
+            <a dropdownToggle class="dropdown-item dropdown-toggle nestDropdown" (click)="false">Group1 <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+            </ul>
+          </li>
+
+          <li role="menuitem" dropdown triggers="mouseover" placement="right" container="body">
+            <a dropdownToggle class="dropdown-item dropdown-toggle nestDropdown" (click)="false">Group2 <span class="caret"></span></a>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#/dropdowns#nested">demo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+    <!--/.nav-collapse -->
+
+
+  </div>
+</div>
